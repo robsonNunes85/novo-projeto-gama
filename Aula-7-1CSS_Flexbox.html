@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 300px; /*modifica o tamanho da caixa*/
+        }
+        .container > div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            /*flex-grow: 1; /*Altera o tamnaho dos elementos proporcionalmente p/ ajuste na tela*/
+        }
+        .b1 {
+          flex-grow: 1;  
+        }
+        .b2 {
+          flex-grow: 3;  
+        }
+        .b3 {
+          flex-grow: 6;  
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="b1">Bloco 1</div>
+        <div class="b2">Bloco 2</div>
+        <div class="b3">Bloco 3</div>
+    </div>
+</body>
+</html>

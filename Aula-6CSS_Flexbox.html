@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 300px; /*modifica o tamanho da caixa*/
+        }
+        .container > div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        .especial{
+             /*Desative uma das opções abaixo e mude a posição
+             da caixa 2 */
+           /*align-self: center;*/
+           /*align-self: flex-start;*/
+           align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Bloco 1</div>
+        <div class="especial">Bloco 2</div>
+        <div>Bloco 3</div>
+    </div>
+</body>
+</html>
